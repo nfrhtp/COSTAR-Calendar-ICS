@@ -20,3 +20,23 @@ cp "ics/cc-everything_<start>_to_<end>.ics" ../COSTAR-Calendar-ICS/costar-calend
 then commit and push here. Subscribed calendars pick up changes within about a
 day (Google polls roughly every 12–24 hours). Event UIDs are stable per
 category+date, so updates modify events in place — never duplicate them.
+
+Title/emoji conventions, the Night-Sunday exception, and all rejected design
+options are recorded in the generator repo:
+`specifications/ICS feed conventions - 2026-0721v1.md`. Do not change event
+conventions without consulting it.
+
+## Rules that protect subscribers
+
+- **Never rename or move `costar-calendar.ics`, and never change the domain.**
+  The URL is every subscriber's link; changing it silently breaks all
+  subscriptions with no way to notify anyone.
+- **Subscription, not import.** Users must subscribe via URL. Google's
+  *import* dialog fails on files this size (observed 2026-07-21); its
+  *subscription* fetcher does not. Don't distribute the file for importing.
+- **Coverage deadline:** the current feed ends **22 Dec 2030** (close of R1's
+  Alpha Quinquennium). Extend the feed before then — Q2 coverage starts
+  23 Dec 2030 (feeds must stay contiguous, never overlapping). Extending is
+  just the regenerate-copy-push cycle above with a later end date.
+- Google names URL subscriptions after the URL (ignoring the embedded
+  calendar name); the subscribe page tells Google users how to rename it.
