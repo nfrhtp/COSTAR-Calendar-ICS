@@ -3,7 +3,7 @@
 Hosting repo for the COSTAR calendar subscription feed, served via GitHub Pages
 at **https://ics.costar.date/**.
 
-- `costar-calendar.ics` — the feed (currently SY1–SY2 of R1: 21 Dec 2025 – 22 Dec 2027)
+- `costar-calendar.ics` — the feed (currently Q1 of R1: 21 Dec 2025 – 22 Dec 2030)
 - `index.html` — subscribe instructions page
 - `CNAME` — custom domain binding for GitHub Pages (`ics.costar.date`)
 
