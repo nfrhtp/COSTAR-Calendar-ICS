@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COSTAR Calendar — Subscribe</title>
+<style>
+  :root {
+    --paper: #f6f6f3;
+    --ink: #23262d;
+    --muted: #6d7178;
+    --accent: #4a5d8a;
+    --rule: #d9dad4;
+    --panel: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #15171c; --ink: #e6e7e3; --muted: #9a9ea6; --accent: #93a7d4; --rule: #33363d; --panel: #1c1e24; }
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+  }
+  main { max-width: 620px; margin: 0 auto; }
+  h1 {
+    font-family: Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin: 0 0 .5rem;
+  }
+  h2 {
+    font-family: Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 2.2rem 0 .6rem;
+  }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  .url {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: .8rem 1rem;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: .92rem;
+    word-break: break-all;
+    user-select: all;
+  }
+  ol { padding-left: 1.3rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--accent); }
+  .tip {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: .8rem 1rem;
+    font-size: .95rem;
+    margin-top: 2.2rem;
+  }
+  .legend { font-size: .95rem; color: var(--muted); margin-top: .4rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>COSTAR Calendar</h1>
+  <p class="sub">A subscription calendar carrying the daily events of the COSTAR calendar — lumas, chromas, lunations, lunar phases, solstices and equinoxes. Subscribe once and updates arrive automatically.</p>
+
+  <div class="url">https://ics.costar.date/costar-calendar.ics</div>
+
+  <h2>Google Calendar</h2>
+  <ol>
+    <li>Open <a href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl">Settings &rarr; Add calendar &rarr; From URL</a></li>
+    <li>Paste the address above and choose <b>Add calendar</b></li>
+  </ol>
+
+  <h2>Apple Calendar (Mac &amp; iPhone)</h2>
+  <ol>
+    <li>Tap or click <a href="webcal://ics.costar.date/costar-calendar.ics">Subscribe in Apple Calendar</a></li>
+    <li>Confirm — the calendar appears as “COSTAR Calendar”</li>
+  </ol>
+
+  <h2>Outlook</h2>
+  <ol>
+    <li>Calendar &rarr; Add calendar &rarr; Subscribe from web</li>
+    <li>Paste the address above</li>
+  </ol>
+
+  <div class="tip"><b>Display tip:</b> give the COSTAR Calendar a <i>pale</i> display color in your calendar app — the events use color emoji (🟥 🔴 ⬜⬛ ☀️) and monochrome symbols (● ◐ ○ ◑, α β γ δ ε) that read best on a light background.</div>
+
+  <p class="legend">Events never mark you as busy. The calendar currently covers 21&nbsp;Dec&nbsp;2025 through 22&nbsp;Dec&nbsp;2027; coverage extends over time and reaches you automatically through your subscription.</p>
+</main>
+</body>
+</html>
