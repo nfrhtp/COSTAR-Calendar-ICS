@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>COSTAR Calendar — Subscribe</title>
+<script src="moon-phase.js"></script>
 <style>
   :root {
     --paper: #f6f6f3;
@@ -16,12 +17,19 @@
   @media (prefers-color-scheme: dark) {
     :root { --paper: #15171c; --ink: #e6e7e3; --muted: #9a9ea6; --accent: #93a7d4; --rule: #33363d; --panel: #1c1e24; }
   }
+  /* day-signature moon-phase background (ruled 2026-07-23): when
+     moon-phase.js is active it supersedes the OS color scheme */
+  :root[data-moon-ink] { --paper: hsl(0 0% calc(var(--moon) * 100%));
+    --rule: rgba(127, 127, 127, .4); --panel: rgba(127, 127, 127, .12); }
+  :root[data-moon-ink="black"] { --ink: #23262d; --muted: #5d6167; --accent: #4a5d8a; }
+  :root[data-moon-ink="white"] { --ink: #e6e7e3; --muted: #a4a8b0; --accent: #93a7d4; }
   body {
     background: var(--paper);
     color: var(--ink);
     font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 3rem 1.25rem 4rem;
+    transition: background-color .6s, color .6s;
   }
   main { max-width: 620px; margin: 0 auto; }
   h1 {
