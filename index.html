@@ -19,7 +19,7 @@
   }
   /* day-signature moon-phase background (ruled 2026-07-23): when
      moon-phase.js is active it supersedes the OS color scheme */
-  :root[data-moon-ink] { --paper: hsl(0 0% calc(var(--moon) * 100%));
+  :root[data-moon-ink] { --paper: var(--moon-bg);
     --rule: rgba(127, 127, 127, .4); --panel: rgba(127, 127, 127, .12); }
   :root[data-moon-ink="black"] { --ink: #23262d; --muted: #5d6167; --accent: #4a5d8a; }
   :root[data-moon-ink="white"] { --ink: #e6e7e3; --muted: #a4a8b0; --accent: #93a7d4; }
